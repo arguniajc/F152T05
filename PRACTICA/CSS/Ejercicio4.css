@@ -1,0 +1,130 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, #bac5b8, #757685);  
+}
+
+header {
+  background: linear-gradient(135deg, #0e4d06, #4c4ecc);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(175, 62, 62, 0.3);
+}
+
+a{
+         display: inline-block;
+    background-color: #eaebd0;
+    color:  #18e044;
+    margin-top: 100px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 300px;
+  grid-template-rows: 250px 200px 180px 150px 200px;
+  grid-template-areas:
+    "hero hero sidebar"
+    "content1 content2 sidebar"
+    "gallery1 gallery2 gallery3"
+    "banner banner banner"
+    "featured1 featured2 .";
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.figura1 {
+  grid-area: hero;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+}
+
+.figura2 {
+  grid-area: sidebar;
+  background: linear-gradient(135deg, #27ae60, #229954);
+}
+
+.figura3 {
+  grid-area: content1;
+  background: linear-gradient(135deg, #e67e22, #d35400);
+}
+
+.figura4 {
+  grid-area: content2;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.figura5 {
+  grid-area: gallery1;
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.figura6 {
+  grid-area: gallery2;
+  background: linear-gradient(135deg, #f1c40f, #f39c12);
+}
+
+.figura7 {
+  grid-area: gallery3;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+
+.figura8 {
+  grid-area: banner;
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+.figura9 {
+  grid-area: featured1;
+  background: linear-gradient(135deg, #e74c3c, #9b59b6);
+}
+
+.figura10 {
+  grid-area: featured2;
+  background: linear-gradient(135deg, #27ae60, #3498db);
+}
+
+.grid figure {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 3px solid white;
+}
+
+
+.grid figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+
+
+footer {
+   background: linear-gradient(135deg, #0e4d06, #4c4ecc);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 -4px 8px rgba(129, 154, 145, 0.2);
+}
+
