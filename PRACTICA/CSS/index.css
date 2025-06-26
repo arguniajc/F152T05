@@ -82,3 +82,12 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.navegacion {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; 
+  color: white;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
